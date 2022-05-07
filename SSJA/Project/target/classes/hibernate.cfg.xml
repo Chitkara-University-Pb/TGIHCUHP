@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!-- Copyright (c) 2015 Oracle and/or its affiliates. All rights reserved. -->
+<hibernate-configuration>
+	<session-factory>
+	
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+        <property name="connection.username">bank</property>
+        <property name="connection.password">bank</property>
+        <property name="dialect">org.hibernate.dialect.Oracle12cDialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        
+		<mapping class="com.entities.SignUpInfo" /> 
+		<mapping class="com.entities.AccountInfo" />
+	</session-factory>
+</hibernate-configuration>
