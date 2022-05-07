@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="css/form.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <title>Personal Details</title>
+
+
+</head>
+
+<body>
+
+<div id="mydiv">
+
+    <fieldset id="fdset">
+
+        <legend id="top">Personal Details</legend>
+
+        <div id="innermydiv">
+
+        <form name="myform" method="post" action="DetailsServlet" id="frm">
+
+  
+          <div class="container">
+
+            <div id="left">
+            
+            <table id="tbl">
+            
+            <tr>
+            
+            <td> <label>First Name</label></td>
+            <td><input id="fname" class="inpt" type="text" required name="fname"></td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><label>Middle Name</label></td>
+            <td><input id="mname" class="inpt" type="text" name="mname"></td>
+            </tr>
+            
+            <tr>
+            
+            <td><label>Last Name</label></td>
+            <td><input id="lname" class="inpt" type="text" name="lname"></td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><label> Age</label></td>
+            <td><input id="age" class="inpt" type="text" required name="age"></td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><label> Date of Birth</label></td>
+            <td><input id="dob" class="inpt" type="date" required name="dob"></td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td> <label>Email</label></td>
+            <td><input id="mail" class="inpt" type="email" required name="mail"></td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><label>Phone Number</label></td>
+            <td><input id="phone" class="inpt" type="number" maxlength="10" name="pnum"></td>
+            </tr>
+            
+            <tr>
+              
+                <td> <label>Maritial Status</label></td>
+                <td> <input id="mstatus"  type="radio" name="sts" value="Married"><label class="rado">Married</label></td>
+                    <td><input id="mstatus"  type="radio" name="sts" value="Unmarried"><label class="rado"> Unmarried</label></td>
+
+                </tr>
+            
+            </table>
+            
+            </div>
+            
+           </div>
+          
+          <div>
+           
+          <label>Address</label> <textarea class="inpt txt" name="addr"></textarea>	 
+           
+          </div>
+            
+            <input id="btn" type="submit" value="Next" />
+            
+
+        </form>
+
+       
+     </div>
+
+</fieldset>
+
+</div>
+
+<!--  <div id="circle"></div> -->
+
+
+
+</body>
+
+</html>
