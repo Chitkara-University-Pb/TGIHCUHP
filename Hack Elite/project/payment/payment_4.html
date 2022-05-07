@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="payment_4.css">
+        <script>
+            
+        </script>
+    </head>
+    <body>
+<div class="container">
+    <div class="row">
+    
+    <div class="col-xs-12 col-md-4">
+    
+    
+    
+    <div class="panel panel-default credit-card-box">
+    <div class="panel-heading display-table" >
+    <div class="row display-tr" >
+    <center>
+    <h3 class="panel-title display-td" ><br>Payment Details</h3>
+    </center>
+    <div class="display-td" >  
+    </div>
+    
+    </div>                    
+    </div>
+    <center>
+    <div class="panel-body">
+    <form role="form" id="payment-form">
+    <div class="row">
+    <div class="col-xs-12">
+    <div class="form-group">
+    <label for="cardNumber">CARD NUMBER</label>
+    <input 
+    type="number"
+    class="form-control"
+    id="cardNumber"
+    name="cardNumber"
+    placeholder="Valid Card Number"
+    autocomplete="cc-number"
+    required autofocus 
+    minlength="12"
+    maxlength="12"
+    />
+    <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+    </div>
+    </div>                            
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-xs-7 col-md-7">
+    <div class="form-group">
+    <label for="cardExpiry"><span class="hidden-xs"><br>EXPIRATION</span><span class="visible-xs-inline"></span> DATE</label>
+    <input 
+    type="tel" 
+    class="form-control" 
+    name="cardExpiry"
+    placeholder="MM / YY"
+    autocomplete="cc-exp"
+    required 
+    maxlength="5"
+    minlength="5"
+    />
+    </div>
+    </div>
+    <div class="col-xs-5 col-md-5 pull-right">
+    <div class="form-group">
+    <label for="cardCVC"><br>CV CODE</label>
+    <input 
+    type="tel" 
+    class="form-control"
+    name="cardCVC"
+    placeholder="CVV"
+    autocomplete="cc-csc"
+    required
+    maxlength="3"
+    minlength="3"
+    />
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-xs-12">
+    <div class="form-group">
+    <label for="couponCode"><br>COUPON CODE</label>
+    <input type="text" class="form-control" name="couponCode" maxlength="6" minlength="6"/>
+    </div>
+    </div>                        
+    </div>
+    <input type="submit" id="pay" value="Pay">
+    </center>
+    </form>      
+    <script type="text/javascript" src="https://js.stripe.com/v2/">
+    </script>
+        
+    </body>    
+</html>
