@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>complete responsive nft website with roadmap design</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header section start page start -->
+    <div class="header">
+      <a href="#" class="logo"> <i class="fas fa-cubes"></i> Tekon. </a>
+
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Story</a>
+        <a href="#">The Fire Pit</a>
+        <a href="#">Roadmap</a>
+        <a href="#">Meet the Team</a>
+        <a href="#">FAQ</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+    </div>
+
+    <div class="Login-page">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="img/logo.png" width="100%" />
+          </div>
+          <div class="col">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()"><h2>Login</h2></span>
+                <span onclick="register()"><h2>Register</h2></span>
+                <hr id="indicator" />
+              </div>
+
+              <form id="Loginform">
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="Password" />
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot password</a>
+              </form>
+
+              <form id="Regform">
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var menuitems = document.getElementById("icons");
+
+      menuitems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "200px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!------------JS for toggle form----------->
+    <script>
+      var Loginform = document.getElementById("Loginform");
+      var Regform = document.getElementById("Regform");
+      var Indicator = document.getElementById("indicator");
+
+      function register() {
+        Regform.style.transform = "translateX(0px)";
+        Loginform.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+
+      function login() {
+        Regform.style.transform = "translateX(300px)";
+        Loginform.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+      }
+    </script>
+  </body>
+</html>
