@@ -1,0 +1,22 @@
+li{
+color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 30px;
+    background: #303334;
+    transition: .5s;
+}
+h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 38px;
+  }
+  
+  p {
+    font-size: 26px;
+  }
+  @import url(https://dl.dafont.com/dl/?f=the_californication);
+  
