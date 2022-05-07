@@ -1,0 +1,49 @@
+body{
+    background-image: url('images/purle.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.column{
+    float: right;
+    width: 25%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    box-shadow: #797979;
+}
+
+.row{
+    margin: 0 -5px;    
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;    
+}
+
+@media screen and (max-width:600px){
+.column{
+    width: 100%;
+    display: inline-flexbox;
+    margin-bottom: 20px;
+    }
+}
+
+.card{
+    box-sizing: border-box;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: transparent;
+    margin-top: 50px;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+
+.card:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);  
+}
