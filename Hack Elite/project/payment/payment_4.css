@@ -1,0 +1,32 @@
+html{
+    background-image: url("https://graphicriver.img.customer.envatousercontent.com/files/249492319/preview_5178726.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=f6aaad8e805b9707bd0fef8b5ce75d8e");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3{
+    font-size: 50px;
+    text-decoration: underline;
+    color: red;
+}
+
+label{
+    margin: 20px;
+    font-size: 40px;
+    color: green;
+}
+
+input{
+    margin: 10px;
+}
+
+#pay{
+    margin-top: 20px;
+    font-size: 50px;
+    color: rgb(242, 242, 248);
+    margin-top: 20px;
+    background-color: blue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 20%;
+   
+}
