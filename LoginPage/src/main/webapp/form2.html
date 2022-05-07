@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+
+    <link href="form2.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <title>Professional Details</title>
+
+
+</head>
+
+<body>
+
+<div id="mydiv">
+
+    <fieldset id="fdset">
+
+        <legend id="top">Professional Details</legend>
+
+        <div id="innermydiv">
+
+        <form name="myform" method="post" action="PdetailsServlet" id="frm">
+
+            <table id="tbl">
+
+                <tr>
+                    <td class="lable">University Name</td>
+                    <td> <input id="fname" class="inpt" type="text" name="uname"> </td>
+
+                </tr>
+
+
+                <tr>
+                    <td class="lable">Cgpa</td>
+                    <td> <input id="mname" class="inpt" type="text" required  name="cgpa"> </td>
+
+                </tr>
+
+                <tr>
+                    <td class="lable">Languages Known</td>
+                    <td><input id="lknown" class="inpt" type="text" name="lknown" ></td>
+                </tr>
+
+                <tr>
+                    <td class="lable">Course</td>
+                    <td> <input id="age" class="inpt" type="text" required name="crse"> </td>
+
+                
+            </table>
+
+<label for="skills" class="lable" class="tlabel">Skills</label>
+
+<textarea  class="inpt" id="skills" name="skills" rows="4" cols="40" class="tarea" name="skls">
+</textarea><br>
+
+<label for="glink" class="lable" class="tlabel">Github Link</label>
+
+<textarea class="inpt" id="glink" name="glink" rows="4" cols="40" class="tarea" name="glink">
+</textarea><br>
+
+<label for="plink" class="lable" class="tlabel">Project Link</label>
+
+<textarea  class="inpt" id="plink" name="plink" rows="4" cols="40" class="tarea" name="plink">
+</textarea><br>
+
+
+
+
+            <input id="btn" type="submit" value="Submit" />
+            
+
+        </form>
+
+       
+     </div>
+
+</fieldset>
+
+
+
+</body>
+
+</html>
