@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Grind Website</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Typing Script CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="cssMe/css1.css">
+
+    <!-- Js FILe -->
+    <link rel="stylesheet" href="Jsme/js.js">
+
+</head>
+<body>
+    <!-- Nav section start -->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html">
+                <h4><span>Hyper</span>Grind</h4>
+            </a>
+            <ul class="nav_menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+            
+        </div>
+    </nav>
+    <!-- Nav Section Ends -->
+
+    <!-- Header Section Start Here -->
+    <header>
+        <div class="container header_container" id="home">
+            <div class="header_left">
+                <div class="header_left_img">
+                    <img src="Image/download.png" alt="Model Image">
+                </div>
+            </div>
+            <div class="header_right">
+                <div class="text-1">Hello, this is</div>
+                <div class="text-2">HyperGrind</div>
+                <div class="text-3">And We Are <span class="typing"></span></div>
+                <a href="RegistrationForm.html" class="btn"><span></span>Register</a>
+
+
+                <!-- Button script tag -->
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function(e){
+                $('.btn').on('mouseenter',function(e){
+                    x = e.pageX - $(this).offset().left;
+                    y = e.pageY -$(this).offset().top;
+                    $(this).find('span').css({top:y,left:x})
+                })
+                $('.btn').on('mouseout',function(e){
+                    x = e.pageX - $(this).offset().left;
+                    y = e.pageY -$(this).offset().top;
+                    $(this).find('span').css({top:y,left:x})
+                })
+            })
+        </script>
+        <!-- Button script end -->
+            </div>
+        </div>
+    </header>
+
+<!-- About Me Section Start Here -->
+<section class="about" id="about">
+    <h2 class="border_bottom">About Us</h2>
+    <div class="container about_container">
+        <div class="about-img">
+            <img src="Image/download.png" alt="about model">
+        </div>
+        <div class="about-text">
+            <div class="text">
+                We are HyperGrind <span class="typing-2"></span>
+            </div>
+            <p>
+                Internetwork Expert (CCIE). Technology is my passion. We always try to share our knowledge and
+                experience
+                because We believe that "helping others means helping yourself".</p>
+            
+        </div>
+    </div>
+</section>
+<!-- About Me Section End Here -->
+
+<!-- My Services Section Start Here -->
+<div class="services" id="service">
+    <h2 class="border_bottom">My Services</h2>
+    <div class="container services_container">
+        <div class="cards">
+            <div class="card">
+                <div class="sbox">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet, est amet libero,
+                        quasi autem quae aspernatur eum accusamus corrupti iste possimus minus deserunt nam illo
+                        fugit ut? Harum, neque?</p>
+                    <a href="Index1.html">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h3>BlockChain</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet, est amet libero,
+                        quasi autem quae aspernatur eum accusamus corrupti iste possimus minus deserunt nam illo
+                        fugit ut? Harum, neque?</p>
+                    <a href="Index2.html">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h3>App Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet, est amet libero,
+                        quasi autem quae aspernatur eum accusamus corrupti iste possimus minus deserunt nam illo
+                        fugit ut? Harum, neque?</p>
+                    <a href="Index3.html">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h3>Content Writing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet, est amet libero,
+                        quasi autem quae aspernatur eum accusamus corrupti iste possimus minus deserunt nam illo
+                        fugit ut? Harum, neque?</p>
+                    <a href="Index4.html">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet, est amet libero,
+                        quasi autem quae aspernatur eum accusamus corrupti iste possimus minus deserunt nam illo
+                        fugit ut? Harum, neque?</p>
+                    <a href="index5.html">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet, est amet libero,
+                        quasi autem quae aspernatur eum accusamus corrupti iste possimus minus deserunt nam illo
+                        fugit ut? Harum, neque?</p>
+                    <a href="index6.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- My Services Section End Here -->
+<br>
+<br>
+<!-- Review Section Starts -->
+<div class="services" id="service">
+    <h2 class="border_bottom">Client Review</h2>
+    <div class="container services_container">
+        <div class="cards">
+            <div class="card">
+                <div class="sbox">
+                    <!-- <img src="images/quote-img.png" alt="" class="quote"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+                    <img src="Image/pic5.jpg" class="user" alt="">
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <!-- <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <!-- <img src="images/quote" alt="" class="quote"> -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="Image/pic6.jpg" class="user" alt="">
+            
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <!-- <i class="fas fa-star"></i> -->
+            </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <!-- <img src="images/quote-img.png" alt="" class="quote"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+                    <img src="Image/pic-3.png" class="user" alt="">
+                    <h3>Harry</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <!-- <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <!-- <img src="images/quote-img.png" alt="" class="quote"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+                    <img src="Image/pic4.jpg" class="user" alt="">
+                    <h3>Mia</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <!-- <img src="images/quote-img.png" alt="" class="quote"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+                    <img src="Image/pic-1.png" class="user" alt="">
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <!-- <i class="fas fa-star"></i> -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sbox">
+                    <!-- <img src="images/quote-img.png" alt="" class="quote"> -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="Image/pic-2.png" class="user" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <!-- <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> -->
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Review Section Ends -->
+
+
+
+<!--Course section start  -->
+<!-- My Courses Section Start Here -->
+<div class="courses" id="courses">
+    <h2 class="border_bottom">
+        HyperGrind Guides
+    </h2>
+    <div class="container courses_container">
+        <article class="course">
+            <div class="course_image">
+                <img src="Image/course (1).jpg" alt="Course 1" width="670px">
+            </div>
+            <div class="course_info">
+                <h4>Start a online business and work from home</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure eius placeat?</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course_image">
+                <img src="Image/course (2).jpg" alt="" width="234px">
+            </div>
+            <div class="course_info">
+                <h4>Responsive Business Website Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure eius placeat?</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course_image">
+                <img src="Image/course (3).jpg" alt="Course 3">
+            </div>
+            <div class="course_info">
+                <h4>Create a business logo here</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure eius placeat?</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </article>
+
+    </div>
+</div>
+<!-- My Courses Section End Here -->
+
+
+<!-- blogs section starts  -->
+<div class="courses" id="courses">
+<section class="blogs" id="blogs" >
+
+    <h2 class="border_bottom" class="courses">Blogs</h2>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="Image/Design3.webp" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title"><h2>INSPIRATION</h2></a>
+                <span>Popular Web Design Trends to look out for in 2022</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="Image/Design2.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title"><h2>DESIGN</h2></a>
+                <span>Popular Web Design Trends to look out for in 2022</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="Image/design4.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title"><h2>TECHNOLOGY</h2></a>
+                <span>Ultimate Guide to Flexbox Centering</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+</div>
+
+<!-- blogs section ends -->
+
+
+ <!-- Footer Section Start Here -->
+ <footer>
+    <div class="container footer_container">
+        <div class="footer_1">
+            <a href="index.html" class="footer_logo">
+                <h4>HyperGrind</h4>
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi nobis enim.</p>
+        </div>
+
+        <div class="footer_2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy & Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Refund Ploicy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_4">
+            <h4 id="contact">Contact Us</h4>
+            <div>
+                <p>+880 1738309749</p>
+                <p class="mail">HyperGrind@gmail.com</p>
+            </div>
+            <ul class="footer_social">
+                 <li><a href="https://facebook.com/developersahadat"> <i class="fa-brands fa-facebook-f"></i> </a></li>
+                <li><a href="https://instagram.com/devsahadat"> <i class="fa-brands fa-instagram"></i> </a></li>
+                <li><a href="https://linkedin.com/in/sahadat-husain"> <i class="fa-brands fa-linkedin"></i> </a></li>
+                <li><a href="https://youtube.com/nextprotipsyt"> <i class="fa-brands fa-youtube"></i> </a></li> 
+               
+            
+            </ul>
+        </div>
+    </div>
+    <div class="footer_copyright">
+        <small>Copyright &copy; HyperGrind</small>
+    </div>
+</footer>
+<!-- Footer Section End Here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="Jsme/js.js"></script>
+</body>
